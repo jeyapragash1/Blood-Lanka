@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Management System</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/header.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="../images/log.png" alt="BMS Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donners.html">Donors</a></li>
+                <li><a href="request.html">Request Blood</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contacus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="auth-links">
+            <a href="../logins/login .html" class="login-btn">Login</a>
+            <a href="../logins/register.html" class="register-btn">Register</a>
+        </div>
+    </header>
+    
+    <script>
+        window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+});
+
+    </script>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Donate Blood, Save Lives</h2>
+            <p>Your small step can give someone another chance at life. Join us and be a hero today!</p>
+            <a href="donners.html" class="btn">Become a Donor</a>
+        </div>
+    </section>
+
+    
+
+  
+
+    <footer id="contact">
+        <p>&copy; 2024 Blood Management System. All rights reserved.</p>
+    </footer>
+    <script>
+        // Get the current page path
+        const currentPath = window.location.pathname.split("/").pop();
+        
+        // Select all navigation links
+        const navLinks = document.querySelectorAll("nav ul li a");
+        
+        // Loop through links to match the current page
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === currentPath) {
+                link.classList.add("active"); // Add 'active' class to the matching link
+            }
+        });
+        </script>
+        
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
