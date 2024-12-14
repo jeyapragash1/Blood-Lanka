@@ -51,4 +51,4 @@ This system is designed using **Object-Oriented Programming (OOP)** principles a
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Jeyapragash1/blood-management-system.git
+https://github.com/jeyapragash1/Blood-Lanka.git
